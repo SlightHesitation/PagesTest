@@ -3,48 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GitHub Pages Test</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="robots" content="noindex">
+  <title>Under Construction</title>
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --text: #1c2430;
+      --muted: #5b6676;
+      --accent: #f5b301;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12161c;
+        --text: #e8ecf2;
+        --muted: #9aa5b5;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      text-align: center;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .tape {
+      width: 100%;
+      max-width: 32rem;
+      height: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 2px;
+      background: repeating-linear-gradient(
+        -45deg,
+        var(--accent) 0 1rem,
+        #1c2430 1rem 2rem
+      );
+    }
+
+    .tape:last-of-type {
+      margin: 2rem 0 0;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2rem, 7vw, 3rem);
+      line-height: 1.15;
+    }
+
+    p {
+      max-width: 30rem;
+      margin: 0;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <p class="site-name">My Test Site</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#checklist">Checklist</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
+  <div class="tape" aria-hidden="true"></div>
   <main>
-    <section class="hero">
-      <h1>It’s alive on GitHub Pages.</h1>
-      <p>If you can read this at your <code>github.io</code> address, your repository, branch, and Pages settings are all working.</p>
-    </section>
-
-    <section id="about">
-      <h2>About this page</h2>
-      <p>This is a bare-bones page with two files: <code>index.html</code> for the structure and <code>style.css</code> for the look. Edit either one, commit the change, and refresh the site to see it update.</p>
-    </section>
-
-    <section id="checklist">
-      <h2>Deployment checklist</h2>
-      <ul>
-        <li>Both files are in the root of your repository</li>
-        <li>The HTML file is named <code>index.html</code></li>
-        <li>Pages is turned on in Settings → Pages</li>
-        <li>The CSS link in the HTML points to <code>style.css</code></li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Replace this text with your own details when you’re ready to build the real thing.</p>
-    </section>
+    <h1>Under construction</h1>
+    <p>This site is being built. Please check back soon.</p>
   </main>
-
-  <footer class="site-footer">
-    <p>Built as a GitHub Pages test.</p>
-  </footer>
+  <div class="tape" aria-hidden="true"></div>
 </body>
 </html>
